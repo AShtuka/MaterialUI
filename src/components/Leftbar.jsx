@@ -1,26 +1,26 @@
 import React from 'react';
-import { Button, makeStyles } from '@material-ui/core';
-import { Person } from '@material-ui/icons';
+import { Container, makeStyles, Typography } from '@material-ui/core';
+import { Home } from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
-  button: {
-    ...theme.myButton,
+  container: {
+    paddingTop: theme.spacing(10),
   },
+  item: {},
+  icon: {},
+  tetx: {},
 }));
 
 const Leftbar = () => {
   const classes = useStyles();
 
   return (
-    <div>
-      <Button
-        variant="contained"
-        startIcon={<Person />}
-        className={classes.button}
-      >
-        MaterialUi
-      </Button>
-    </div>
+    <Container className={classes.container}>
+      <div className={classes.item}>
+        <Home className={classes.icon} />
+        <Typography className={classes.text}>Homepage</Typography>
+      </div>
+    </Container>
   );
 };
 

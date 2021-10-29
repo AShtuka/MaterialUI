@@ -1,10 +1,10 @@
 import React from 'react';
-import { Button, makeStyles } from '@material-ui/core';
+import { Button, Container, makeStyles } from '@material-ui/core';
 import { Person } from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
-  button: {
-    ...theme.myButton,
+  container: {
+    paddingTop: theme.spacing(10),
   },
 }));
 
@@ -12,7 +12,7 @@ const Rightbar = () => {
   const classes = useStyles();
 
   return (
-    <div>
+    <Container className={classes.container}>
       <Button
         variant="contained"
         startIcon={<Person />}
@@ -20,7 +20,7 @@ const Rightbar = () => {
       >
         MaterialUi
       </Button>
-    </div>
+    </Container>
   );
 };
 
