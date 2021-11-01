@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button, Container, makeStyles } from '@material-ui/core';
-import { Person } from '@material-ui/icons';
+import { Container, makeStyles } from '@material-ui/core';
+import Post from './Post';
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -13,13 +13,12 @@ const Feed = () => {
 
   return (
     <Container className={classes.container}>
-      <Button
-        variant="contained"
-        startIcon={<Person />}
-        className={classes.button}
-      >
-        MaterialUi
-      </Button>
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
     </Container>
   );
 };
