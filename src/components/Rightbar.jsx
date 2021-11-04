@@ -1,6 +1,8 @@
 import React from 'react';
-import { Button, Container, makeStyles } from '@material-ui/core';
-import { Person } from '@material-ui/icons';
+import {
+  Avatar, Container, makeStyles, Typography,
+} from '@material-ui/core';
+import { AvatarGroup } from '@material-ui/lab';
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -13,13 +15,14 @@ const Rightbar = () => {
 
   return (
     <Container className={classes.container}>
-      <Button
-        variant="contained"
-        startIcon={<Person />}
-        className={classes.button}
-      >
-        MaterialUi
-      </Button>
+      <Typography>Online Friends</Typography>
+      <AvatarGroup max={4}>
+        <Avatar alt="Remy Sharp" src="https://material-ui.com/static/images/avatar/1.jpg" />
+        <Avatar alt="Travis Howard" src="https://material-ui.com/static/images/avatar/2.jpg" />
+        <Avatar alt="Cindy Baker" src="https://material-ui.com/static/images/avatar/3.jpg" />
+        <Avatar alt="Agnes Walker" src="https://material-ui.com/static/images/avatar/4.jpg" />
+        <Avatar alt="Trevor Henderson" src="https://material-ui.com/static/images/avatar/5.jpg" />
+      </AvatarGroup>
     </Container>
   );
 };
