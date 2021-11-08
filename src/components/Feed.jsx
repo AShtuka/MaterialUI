@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, makeStyles } from '@material-ui/core';
-import Stopwatch from './Stopwatch';
-// import Post from './Post';
+// import Stopwatch from './Stopwatch';
+import Post from './Post';
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -14,13 +14,13 @@ const Feed = () => {
 
   return (
     <Container className={classes.container}>
-      <Stopwatch />
-      {/* <Post /> */}
-      {/* <Post /> */}
-      {/* <Post /> */}
-      {/* <Post /> */}
-      {/* <Post /> */}
-      {/* <Post /> */}
+      {/* <Stopwatch /> */}
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
     </Container>
   );
 };
